@@ -13,7 +13,7 @@ The primary entity is the **meditation technique**, not the research paper. Four
 practices meet the featured criteria (a single defined practice + dedicated app /
 self-guided delivery + a real, statable evidence status):
 
-- **Isha Kriya** (delivered as the free *Miracle of Mind* app)
+- **Miracle of Mind** (the free app that delivers the *Isha Kriya* practice)
 - **Heartfulness**
 - **Wim Hof Method**
 - **Yoga Nidra**
@@ -28,9 +28,9 @@ and a filterable research library. The **Evidence Map** scores every practice on
 ## Independence
 
 The registry's value rests on being trustworthy. It is built by volunteers, some of whom
-practice Isha Kriya / Miracle of Mind — stated openly on the About page. No practice
-receives a scoring bonus, softer language, or more prominent placement than any other.
-The proof that these rules held is in the review artifacts:
+practice Miracle of Mind (the app delivering the Isha Kriya practice) — stated openly on
+the About page. No practice receives a scoring bonus, softer language, or more prominent
+placement than any other. The proof that these rules held is in the review artifacts:
 
 - [`DECISIONS.md`](./DECISIONS.md) — judgment-call log
 - [`CLAIMS-REGISTER.md`](./CLAIMS-REGISTER.md) — per-page claim ledger

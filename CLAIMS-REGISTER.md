@@ -9,9 +9,12 @@ Legend — claim-strength language must match study design:
 `MA` meta-analysis/systematic review · `RCT` randomized trial · `OBS` uncontrolled/observational ·
 `MECH` mechanistic · `NULL` null/negative.
 
+Naming: "Miracle of Mind" is the entry; "Isha Kriya" is the protocol the studies tested
+(see DECISIONS D14). Both appear by design.
+
 ---
 
-## Isha Kriya (`/techniques/isha-kriya`)
+## Miracle of Mind — studied as Isha Kriya (`/techniques/miracle-of-mind`)
 
 | # | Claim as worded on page | Strength language | Cited study (same page) | Design | Notes |
 |---|---|---|---|---|---|
@@ -19,7 +22,7 @@ Legend — claim-strength language must match study design:
 | IK2 | "an uncontrolled observational study reported reduced self-reported anxiety and depression within two weeks" | OBS | Hariri 2022 (PMID 36213913) | OBS | High attrition + affiliated-researcher flags shown |
 | IK3 | "a single-session, uncontrolled pilot reported an immediate post-session reduction in total mood disturbance" | OBS | Rangasamy 2019 (PMID 32665843) | Pilot | "measures a one-off state, not clinical benefit" stated |
 | IK4 | "a feasibility trial found both meditative practices were acceptable ... feasibility threshold was not met" | RCT/NULL | Narayanan 2020 (PMID 32153208) | RCT (feasibility) | Not powered for efficacy — stated |
-| IK5 | SMK/Inner Engineering stress/sleep findings "tested a different, longer, initiation-based practice ... background context, not direct evidence" | OBS + different-practice flag | Peterson 2017 (29228793); Swaminathan 2025 (39968198) | OBS | `differentPractice` flag renders "Tested a different practice" tag |
+| IK5 | SMK/Inner Engineering stress/sleep findings "tested a different, longer, initiation-based practice ... background context, not evidence for Miracle of Mind" | OBS + different-practice flag | Peterson 2017 (29228793); Swaminathan 2025 (39968198) | OBS | `differentPractice` flag renders "Tested a different practice" tag |
 | IK6 | "a systematic review ... rated the overall risk of bias as moderate ... methodological limitations warrant caution" | MA | Giridharan 2026 (PMID 41694821) | Systematic review | Covers family broadly, not IK-specific — stated |
 
 Mandatory sections present: Limitations ✅ · Safety ✅ · Self-research disclosure ✅ ·
@@ -36,7 +39,7 @@ Dose caveat (studied vs app dose) ✅ (BRIEF §6.1) · Standard disclaimer ✅.
 | HF5 | "several of the most independent studies report null or mixed results (for example, no effect on dental anxiety or pain)" | NULL/mixed | Dental RCT 2021 (34097862) | RCT | Balancing null included per BRIEF §8 |
 
 Mandatory sections present: Limitations ✅ · Safety ✅ · Self-research disclosure ✅
-(identical wording to IK) · Standard disclaimer ✅.
+(identical wording to Miracle of Mind) · Standard disclaimer ✅.
 
 ## Wim Hof Method (`/techniques/wim-hof-method`)
 
@@ -90,8 +93,8 @@ satisfying BRIEF §2.3 and §2.5/§5.
 - Every benefit claim has an on-page citation with PubMed and/or DOI link. ✅
 - Null and mixed studies retained across all four practices + a critical appraisal of
   meditation-research quality (Van Dam 2018; Goyal 2014) present. ✅ (BRIEF §8)
-- "Where a study tested a different practice, say so": Isha Kriya SMK/IE studies flagged
-  with a visible "Tested a different practice" tag. ✅ (BRIEF §9)
+- "Where a study tested a different practice, say so": the Isha Kriya / SMK background
+  studies are flagged with a visible "Tested a different practice" tag. ✅ (BRIEF §9)
 
 ---
 

@@ -5,6 +5,9 @@ audit exists to make the trustworthiness of the whole enterprise checkable, not 
 asserted. Where possible, claims here are verifiable by inspecting the source in this
 repository. Build date: 2026-07-14.
 
+Naming: the featured entry is presented as **Miracle of Mind**; **Isha Kriya** is the
+protocol its studies tested (see DECISIONS D14). "MoM" abbreviates Miracle of Mind.
+
 The question this document answers: **did Miracle of Mind / Isha Kriya receive any
 advantage — in scoring, wording, placement, or scope — that another practice did not?**
 The finding is **no**, and below is the evidence.
@@ -13,12 +16,13 @@ The finding is **no**, and below is the evidence.
 
 ## A. MoM's evidence tier matches its own corpus (BRIEF §2.4)
 
-Isha Kriya is rated **"Pilot / early-stage"** — the *lowest* evidence tier of the four
-featured practices. This is not a courtesy; it is what the directly-mapped corpus supports:
+Miracle of Mind (the app delivering the Isha Kriya practice) is rated **"Pilot /
+early-stage"** — the *lowest* evidence tier of the four featured practices. This is not a
+courtesy; it is what the directly-mapped corpus supports:
 
 | Practice | Evidence-depth tier | Direct-evidence corpus |
 |---|---|---|
-| Isha Kriya (MoM) | **Pilot / early-stage** | 1 RCT (null on primary), 1 uncontrolled observational (high dropout), 1 single-session pilot, 1 feasibility RCT |
+| Miracle of Mind (studied as Isha Kriya) | **Pilot / early-stage** | 1 RCT (null on primary), 1 uncontrolled observational (high dropout), 1 single-session pilot, 1 feasibility RCT |
 | Heartfulness | Emerging | several small RCTs + cohorts, no meta-analysis |
 | Wim Hof Method | Limited / mixed | 1 landmark mechanistic RCT + 1 systematic review; several nulls |
 | Yoga Nidra | Emerging | multiple small RCTs + 2 meta-analyses (rated low/very-low certainty) |
@@ -55,7 +59,7 @@ The predecessor's additive weights — the "+yogic" family bonus and the
 Structural symmetry (all four dossiers rendered by the **same** `[slug].astro` template
 and the same components — verifiable by inspection):
 
-| Template element (BRIEF §12) | Isha Kriya | Heartfulness | Wim Hof | Yoga Nidra |
+| Template element (BRIEF §12) | Miracle of Mind | Heartfulness | Wim Hof | Yoga Nidra |
 |---|---|---|---|---|
 | Neutral one-line definition | ✅ | ✅ | ✅ | ✅ |
 | Lineage / access / cost | ✅ | ✅ | ✅ | ✅ |
@@ -69,8 +73,8 @@ and the same components — verifiable by inspection):
 
 Wording symmetry checks:
 - **Limitations are not softer for MoM.** MoM's limitations section leads with "only one
-  genuine randomized controlled trial has tested Isha Kriya itself, and it did not confirm
-  benefit on its primary outcome" — at least as blunt as any peer's.
+  genuine randomized controlled trial has tested this practice (as Isha Kriya), and it did
+  not confirm benefit on its primary outcome" — at least as blunt as any peer's.
 - **Affiliated-research disclosure is identical.** MoM and Heartfulness use the same
   sentence pattern ("several supporting studies were conducted by [affiliated] researchers
   ... disclosed here in the same terms used for any other practice's in-house research").
@@ -78,7 +82,7 @@ Wording symmetry checks:
 - **No second-person health promises, no banned science verbs** anywhere, including MoM's
   page. Automated scan passed with only false positives (journal name "Cureus"; the
   methodology page naming the banned words). (CLAIMS-REGISTER site-wide checks.)
-- **Body-length is not skewed toward MoM.** Rendered word counts: Isha Kriya ~1,950,
+- **Body-length is not skewed toward MoM.** Rendered word counts: Miracle of Mind ~1,950,
   Heartfulness ~1,940, Wim Hof ~2,230, Yoga Nidra ~2,000. MoM is mid-pack; the longest page
   is Wim Hof, driven by its mandatory safety section (BRIEF §6.3), not favorable copy.
 
@@ -98,8 +102,8 @@ Wording symmetry checks:
   MBCT, TM, Vipassana) are course-/retreat-delivered and that **none of the four featured
   app-based practices — MoM included — is among the most-researched forms of meditation.**
   This directly prevents the reader from inferring app-based (hence MoM) leadership.
-- Isha Kriya's dose caveat (studied protocol is longer than the ~7-min app session) is
-  stated as a limitation, per BRIEF §6.1 — an honesty cost borne by MoM specifically.
+- MoM's dose caveat (studied protocol is longer than the ~7-min app session) is stated as a
+  limitation, per BRIEF §6.1 — an honesty cost borne by MoM specifically.
 
 ## F. Success metric integrity (BRIEF §1, §16 anti-bias lock)
 
@@ -124,7 +128,8 @@ Full transparency requires naming what this audit cannot self-certify:
 ## Conclusion
 
 On every dimension the contract names — evidence tier, scoring pipeline, wording,
-placement, scope, and success metric — Miracle of Mind / Isha Kriya was held to the same
-rules as its peers and, where honesty demanded, rated *below* them. The independence
-contract (BRIEF §2) held. The build's own confidence in that finding is recorded here
-alongside the residual risks that only a qualified independent reviewer can close.
+placement, scope, and success metric — Miracle of Mind (the Isha Kriya practice) was held
+to the same rules as its peers and, where honesty demanded, rated *below* them. The
+independence contract (BRIEF §2) held. The build's own confidence in that finding is
+recorded here alongside the residual risks that only a qualified independent reviewer can
+close.

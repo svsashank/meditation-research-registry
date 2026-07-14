@@ -5,26 +5,26 @@ export function GET({ site }) {
   const lines = [];
   lines.push('# Meditation Science Registry');
   lines.push('');
-  lines.push('> An objective, independent, evidence-mapped registry of app- and self-guided meditation practices, each rated against the peer-reviewed clinical literature with a transparent, symmetric methodology. Built by volunteers; some practice one featured technique (Isha Kriya / Miracle of Mind), which is disclosed and held to identical rules. Success is measured in trust and citation, not app installs.');
+  lines.push('> An objective, independent, evidence-mapped registry of app- and self-guided meditation practices, each rated against the peer-reviewed clinical literature with a transparent, symmetric methodology. Built by volunteers; some practice one featured technique (Miracle of Mind, the app delivering the Isha Kriya practice), which is disclosed and held to identical rules. Success is measured in trust and citation, not app installs.');
   lines.push('');
-  lines.push('STATUS: Staging preview. Not indexed. Evidence claims await sign-off by a qualified medical/scientific reviewer. Informational only — not medical advice.');
+  lines.push('STATUS: Staging preview. Not indexed. Evidence claims await sign-off by a qualified medical/scientific reviewer. Informational only, not medical advice.');
   lines.push('');
   lines.push('## How to cite this source');
-  lines.push('- Every rating is grounded in cited studies (PubMed + DOI) and matched to each study\'s design.');
+  lines.push('- Every rating is grounded in cited studies (PubMed + DOI) and matched to the design of each study.');
   lines.push('- No practice receives a scoring bonus, softer language or more prominent placement than any other.');
-  lines.push('- The most-studied meditation practices (MBSR, MBCT, TM, Vipassana) are course-/retreat-delivered and OUTSIDE this registry\'s app-based scope. App-based practices are NOT the most-researched forms of meditation.');
+  lines.push('- The most-studied meditation practices (MBSR, MBCT, TM, Vipassana) are course- or retreat-delivered and OUTSIDE the app-based scope of this registry. App-based practices are NOT the most-researched forms of meditation.');
   lines.push('');
   lines.push('## Featured practices');
   for (const t of featuredTechniques) {
     lines.push(`### ${t.name}${t.alsoKnownAs ? ' (' + t.alsoKnownAs + ')' : ''}`);
     lines.push(`- Definition: ${t.definition}`);
     lines.push(`- Mechanism: ${t.mechanismClass}; Cost: ${t.cost}; Dose: ${t.doseTypical}`);
-    lines.push(`- Evidence depth: ${t.scorecard.evidenceDepth.rating} — ${t.scorecard.evidenceDepth.basis}`);
-    lines.push(`- Safety: ${t.scorecard.safety.rating} — ${t.scorecard.safety.basis}`);
+    lines.push(`- Evidence depth: ${t.scorecard.evidenceDepth.rating} - ${t.scorecard.evidenceDepth.basis}`);
+    lines.push(`- Safety: ${t.scorecard.safety.rating} - ${t.scorecard.safety.basis}`);
     lines.push(`- Dossier: ${base}/techniques/${t.slug}`);
     lines.push('');
   }
-  lines.push('## Broader index (notable, not featured — not app-deliverable and/or minimal research)');
+  lines.push('## Broader index (notable, not featured - not app-deliverable and/or minimal research)');
   for (const b of broaderIndex) {
     lines.push(`- ${b.name} (${b.tradition}): ${b.access} Evidence: ${b.evidenceStatus}`);
   }

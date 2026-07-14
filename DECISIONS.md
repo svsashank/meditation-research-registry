@@ -5,18 +5,18 @@ calls are additionally listed in `FLAGGED.md`. Build date: 2026-07-14.
 
 ---
 
-### D1. Isha Kriya rated "Pilot / early-stage," despite a nominally large research family
+### D1. Miracle of Mind (Isha Kriya) rated "Pilot / early-stage," despite a nominally large research family
 
 The Isha Foundation research corpus is sizeable, but most of it tested **Shambhavi
 Mahamudra Kriya (SMK) / Inner Engineering** — a longer, initiation-based, multi-component
-practice — not Isha Kriya. Applying the identity rule (BRIEF §6.1) strictly: only studies
-of Isha Kriya *itself* count as direct evidence. That leaves one genuine RCT (Chopra 2023,
-null on primary endpoint), one uncontrolled observational study with high dropout (Hariri
-2022), one single-session pilot (Rangasamy 2019), and one feasibility RCT (Narayanan 2020).
-That supports a pilot/early-stage tier and nothing higher. The impressive SMK/Inner
-Engineering studies are shown on the page as **background context, explicitly flagged as a
-different practice**, per BRIEF §9. This is the single most consequential neutrality
-decision in the build; see NEUTRALITY-AUDIT §A.
+practice — not the Isha Kriya practice that Miracle of Mind delivers. Applying the identity
+rule (BRIEF §6.1) strictly: only studies of Isha Kriya *itself* count as direct evidence.
+That leaves one genuine RCT (Chopra 2023, null on primary endpoint), one uncontrolled
+observational study with high dropout (Hariri 2022), one single-session pilot (Rangasamy
+2019), and one feasibility RCT (Narayanan 2020). That supports a pilot/early-stage tier and
+nothing higher. The impressive SMK/Inner Engineering studies are shown on the page as
+**background context, explicitly flagged as a different practice**, per BRIEF §9. This is
+the single most consequential neutrality decision in the build; see NEUTRALITY-AUDIT §A.
 
 ### D2. "Evidence depth" ratings use ordinal labels, not a computed composite score
 
@@ -47,7 +47,7 @@ mechanism, and the underlying evidence tiers are labelled honestly. Reporting do
 safety facts is required of a clinical registry (BRIEF §6.3) and is not disparagement. See
 FLAGGED F1.
 
-### D5. Heartfulness "affiliated researchers" disclosure worded identically to Isha Kriya's
+### D5. Heartfulness "affiliated researchers" disclosure worded identically to Miracle of Mind's
 
 Both practices have a large share of in-house research. To satisfy BRIEF §2.1 and §6.2
 (identical wording), a single disclosure sentence pattern is used for both, stored in each
@@ -78,15 +78,15 @@ the exclusion rule is transparent and not evidence-based cherry-picking.
 
 To avoid implying a ranking (and to avoid any axis being "ordered to advantage" a practice,
 BRIEF §7), the map and all technique listings use one fixed order (the registry's
-`order` field: Isha Kriya, Heartfulness, Wim Hof, Yoga Nidra) everywhere. Isha Kriya's first
-position is the arbitrary brief order, not a merit ranking; this is stated in DECISIONS and
-the audit so first-position is not mistaken for endorsement. See FLAGGED F2.
+`order` field: Miracle of Mind, Heartfulness, Wim Hof, Yoga Nidra) everywhere. Miracle of
+Mind's first position is the arbitrary brief order, not a merit ranking; this is stated in
+DECISIONS and the audit so first-position is not mistaken for endorsement. See FLAGGED F2.
 
 ### D10. Founder-voice blocks included for all four practices, symmetrically
 
 Per BRIEF §10, a founder/teacher quote may appear only on that tradition's own page, framed
 as perspective not evidence. To keep this symmetric, every featured practice — not just
-Isha Kriya — carries one clearly-framed, sourced quote block rendered by the same
+Miracle of Mind — carries one clearly-framed, sourced quote block rendered by the same
 component. The Wim Hof quote was changed from an initially-drafted profane paraphrase to a
 clean, commonly-cited line, because the paraphrase violated the verbatim-and-sourced rule.
 See FLAGGED F3.
@@ -110,3 +110,24 @@ risks becoming a de-facto composite "score" and could disadvantage newer practic
 fewer citations regardless of quality. Impact is instead reflected qualitatively (study
 design and count on one hierarchy). Flagged as a deviation-by-omission for reviewer
 confirmation. See FLAGGED F5.
+
+### D14. Featured entry renamed "Miracle of Mind" (was "Isha Kriya") at owner's instruction
+
+The project owner directed that the entry be presented as **Miracle of Mind** rather than
+Isha Kriya. Display name, URL slug (`/techniques/miracle-of-mind`), nav, cards, evidence
+map, and prose now use "Miracle of Mind." This is defensible under BRIEF §2.2 (symmetric
+treatment): the other featured entries are named by their common/brand name (Heartfulness,
+Wim Hof Method, Yoga Nidra), so naming this one by its common app name is consistent, not a
+privilege. Two accuracy carve-outs were kept, per BRIEF §6.1 and §9:
+
+1. **Study citations retain "Isha Kriya."** Paper titles and the "what was actually tested"
+   fields still say Isha Kriya, because that is the protocol the studies tested (the app is
+   a shorter delivery of it). Renaming them would misstate the science.
+2. **The lineage/identity note retains both names.** The page states openly that Miracle of
+   Mind *is* the Isha Kriya practice, and the Shambhavi-Mahamudra firewall (D1) still names
+   "Isha Kriya vs SMK" because that contrast is what makes the firewall meaningful.
+
+Net effect on neutrality: none. The entry is still rated Pilot / early-stage, its
+limitations are unchanged, and its evidence is still firewalled from SMK/Inner Engineering.
+In the review artifacts, "Miracle of Mind" denotes the entry and "Isha Kriya" denotes the
+studied protocol; both appear by design.

@@ -1,11 +1,11 @@
 {
-  "slug": "isha-kriya",
-  "name": "Isha Kriya",
-  "alsoKnownAs": "Delivered as the free \"Miracle of Mind\" app",
+  "slug": "miracle-of-mind",
+  "name": "Miracle of Mind",
+  "alsoKnownAs": "The Isha Kriya practice, delivered as the free Miracle of Mind app",
   "featured": true,
   "order": 1,
   "definition": "A guided practice in which you sit with eyes closed, focus attention on the space between the eyebrows, mentally repeat two set phrases through slow breath cycles, and finish with a short chant of \"Aa\".",
-  "lineage": "Taught by Sadhguru / Isha Foundation, drawn from classical yogic practice.",
+  "lineage": "Taught by Sadhguru / Isha Foundation, drawn from classical yogic practice. Miracle of Mind delivers the Isha Kriya practice in an app.",
   "mechanismClass": "Breath-and-attention (focused attention with mantra)",
   "accessModel": "App / self-guided",
   "cost": "Free",
@@ -19,27 +19,27 @@
   "doseCaveat": "The Isha Kriya protocol used in published studies has a set structure of roughly 12-15 minutes, while the app lets users shorten the session toward about 7 minutes. The studied dose and the app dose are therefore not always identical.",
   "selfResearchDisclosure": "Several supporting studies were conducted by Isha-affiliated researchers, including the Sadhguru Center for a Conscious Planet at Beth Israel Deaconess Medical Center / Harvard. This is disclosed here in the same terms used for any other practice's in-house research.",
   "evidenceDossier": [
-    "The direct evidence for Isha Kriya specifically is small and early-stage. The strongest study is a randomized controlled trial in transplant patients (Chopra 2023), and its primary quality-of-life endpoint was null, with one secondary measure improving transiently before fading.",
+    "The direct evidence for this practice (studied under the name Isha Kriya) is small and early-stage. The strongest study is a randomized controlled trial in transplant patients (Chopra 2023), and its primary quality-of-life endpoint was null, with one secondary measure improving transiently before fading.",
     "The most frequently cited positive result (Hariri 2022) comes from an uncontrolled observational study with high dropout, conducted by Isha-affiliated researchers, so it cannot separate the practice from expectancy, self-selection or regression to the mean.",
     "A single-session pilot (Rangasamy 2019) reported an immediate mood change but measures only a one-off state, not clinical benefit.",
-    "Many impressive-sounding Isha findings on stress, sleep and brain measures tested Shambhavi Mahamudra Kriya or the Inner Engineering program — a different, longer, initiation-based practice — and are shown here as background context, not as Isha Kriya evidence.",
+    "Many impressive-sounding Isha findings on stress, sleep and brain measures tested Shambhavi Mahamudra Kriya or the Inner Engineering program — a different, longer, initiation-based practice — and are shown here as background context, not as evidence for Miracle of Mind.",
     "A 2026 systematic review of Isha Yoga practices rated the overall risk of bias as moderate and noted the absence of active-comparator trials."
   ],
   "limitations": [
-    "Only one genuine randomized controlled trial has tested Isha Kriya itself, and it did not confirm benefit on its primary outcome.",
+    "Only one genuine randomized controlled trial has tested this practice (as Isha Kriya), and it did not confirm benefit on its primary outcome.",
     "The positive findings come almost entirely from uncontrolled or single-session designs, several by affiliated researchers, often with high attrition and self-reported outcomes.",
-    "There is no meta-analysis of Isha Kriya, no multi-trial base, and no independent positive randomized trial.",
-    "The dose studied is longer than the app's default, so evidence transfer to a 7-minute session is an assumption, not a demonstrated fact."
+    "There is no meta-analysis of this practice, no multi-trial base, and no independent positive randomized trial.",
+    "The dose studied is longer than the app's default, so evidence transfer to a 7-minute Miracle of Mind session is an assumption, not a demonstrated fact."
   ],
   "safety": [
-    "Isha Kriya is a low-intensity seated practice with no documented serious risks in the published literature.",
+    "Miracle of Mind is a low-intensity seated practice with no documented serious risks in the published literature.",
     "As with any meditation, a minority of people can find sustained inward attention uncomfortable; anyone with a significant psychiatric condition should approach intensive practice with professional guidance.",
     "The practice is not a treatment for any medical or mental-health condition and should not replace professional care."
   ],
   "scorecard": {
     "evidenceDepth": {
       "rating": "Pilot / early-stage",
-      "basis": "One null-leaning RCT plus uncontrolled observational and single-session pilots; no meta-analysis and no independent positive trial specific to Isha Kriya."
+      "basis": "One null-leaning RCT plus uncontrolled observational and single-session pilots; no meta-analysis and no independent positive trial specific to this practice (studied as Isha Kriya)."
     },
     "cost": {
       "rating": "Free",
@@ -64,7 +64,7 @@
   },
   "founderVoice": {
     "quote": "You don't have to believe anything, you don't have to disbelieve anything, and you don't have to imagine anything. This is a way of using your mind, breath, and awareness to create a certain distance between you and your body and mind.",
-    "attribution": "Sadhguru, on Isha Kriya",
+    "attribution": "Sadhguru, on the Isha Kriya practice (delivered as Miracle of Mind)",
     "framing": "This is the source teacher's own framing of the practice, presented as that tradition's perspective and not as scientific evidence.",
     "source": "https://isha.sadhguru.org/us/en/wisdom/type/isha-kriya"
   }
