@@ -5,7 +5,7 @@
   "featured": true,
   "order": 1,
   "definition": "A guided practice in which you sit with eyes closed, focus attention on the space between the eyebrows, mentally repeat two set phrases through slow breath cycles, and finish with a short chant of \"Aa\".",
-  "lineage": "Taught by Sadhguru / Isha Foundation, drawn from classical yogic practice. Miracle of Mind delivers the Isha Kriya practice in an app.",
+  "lineage": "Taught by Sadhguru / Isha Foundation, drawn from classical yogic practice. Miracle of Mind delivers the Isha Kriya practice through an app and is closely similar to it.",
   "mechanismClass": "Breath-and-attention (focused attention with mantra)",
   "accessModel": "App / self-guided",
   "cost": "Free",
@@ -15,11 +15,11 @@
     "label": "Miracle of Mind app (free)",
     "url": "https://isha.sadhguru.org/us/en/miracle-of-mind"
   },
-  "identityNote": "Miracle of Mind is the Isha Kriya practice in an upgraded app presentation. Because they are the same practice, studies of Isha Kriya count as this entry's direct evidence.",
+  "identityNote": "Miracle of Mind and Isha Kriya are closely similar: Miracle of Mind delivers the Isha Kriya practice through an app, the main difference being length (the app offers a shorter, about 7-minute version of the studied protocol). Because the two are so similar, studies of Isha Kriya are treated as this entry's direct evidence, subject to the dose caveat below.",
   "doseCaveat": "The Isha Kriya protocol used in published studies has a set structure of roughly 12-15 minutes, while the app lets users shorten the session toward about 7 minutes. The studied dose and the app dose are therefore not always identical.",
   "selfResearchDisclosure": "Several supporting studies were conducted by Isha-affiliated researchers, including the Sadhguru Center for a Conscious Planet at Beth Israel Deaconess Medical Center / Harvard. This is disclosed here in the same terms used for any other practice's in-house research.",
   "evidenceDossier": [
-    "The direct evidence for this practice (studied under the name Isha Kriya) is small and early-stage. The strongest study is a randomized controlled trial in transplant patients (Chopra 2023), and its primary quality-of-life endpoint was null, with one secondary measure improving transiently before fading.",
+    "The direct evidence comes from studies of Isha Kriya, the closely similar practice that Miracle of Mind delivers, and it is small and early-stage. The strongest study is a randomized controlled trial in transplant patients (Chopra 2023), and its primary quality-of-life endpoint was null, with one secondary measure improving transiently before fading.",
     "The most frequently cited positive result (Hariri 2022) comes from an uncontrolled observational study with high dropout, conducted by Isha-affiliated researchers, so it cannot separate the practice from expectancy, self-selection or regression to the mean.",
     "A single-session pilot (Rangasamy 2019) reported an immediate mood change but measures only a one-off state, not clinical benefit.",
     "Many impressive-sounding Isha findings on stress, sleep and brain measures tested Shambhavi Mahamudra Kriya or the Inner Engineering program — a different, longer, initiation-based practice — and are shown here as background context, not as evidence for Miracle of Mind.",

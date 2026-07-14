@@ -131,3 +131,14 @@ Net effect on neutrality: none. The entry is still rated Pilot / early-stage, it
 limitations are unchanged, and its evidence is still firewalled from SMK/Inner Engineering.
 In the review artifacts, "Miracle of Mind" denotes the entry and "Isha Kriya" denotes the
 studied protocol; both appear by design.
+
+### D15. Relationship framed as "closely similar," not strict identity, at owner's request
+
+The owner asked that Miracle of Mind and Isha Kriya be described as **similar** where
+relevant, rather than as strictly the same practice. The identity note, lineage and
+evidence dossier now say the two are "closely similar" (the app is a shorter version of
+the studied protocol). Neutrality check: this does **not** strengthen Miracle of Mind's
+standing. All Isha Kriya studies remain mapped as direct evidence and the null RCT stays
+first in the dossier; the "similar (not dose-identical)" framing is, if anything, the more
+conservative reading and simply makes the existing dose caveat (BRIEF §6.1) explicit in the
+relationship language. The Shambhavi-Mahamudra firewall (D1) is unchanged.
