@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { featuredTechniques, broaderIndex, withBase } from '../../lib/data.js';
+---
+<BaseLayout title="Techniques" description="Featured app-based meditation practices and a broader, honestly-labelled index of practices that fall outside the app-based scope.">
+  <p class="eyebrow">Directory</p>
+  <h1>Techniques</h1>
+  <p class="lede">Four featured practices meet the criteria for a full dossier: a single defined practice, dedicated app or self-guided delivery, and a real, statable evidence status. Below them, a broader index lists notable practices that fall outside that scope.</p>
+
+  <h2>Featured practices</h2>
+  <div class="card-grid">
+    {featuredTechniques.map((t) => (
+      <a class="card" href={withBase(`/techniques/${t.slug}`)}>
+        <h3>{t.name}</h3>
+        <div class="meta">{t.mechanismClass}</div>
+        <p>{t.definition}</p>
+        <div style="margin-top:.6rem">
+          <span class="tag">{t.cost}</span>
+          <span class="tag">{t.scorecard.evidenceDepth.rating} evidence</span>
+          {t.safetyLead && <span class="tag warn">Safety notes</span>}
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <h2>Broader technique index</h2>
+  <p>These traditions are notable but are not featured, because they are not app-deliverable and/or have minimal published research. They are described accurately, with access model and evidence status stated plainly. No clinical claims are made for them.</p>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th>Practice</th><th>Tradition</th><th>Access model</th><th>Evidence status</th><th>Why not featured</th></tr>
+      </thead>
+      <tbody>
+        {broaderIndex.map((b) => (
+          <tr>
+            <td><strong>{b.name}</strong></td>
+            <td>{b.tradition}</td>
+            <td>{b.access}</td>
+            <td>{b.evidenceStatus}</td>
+            <td>{b.whyNotFeatured}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="disclaimer">The most-studied meditation practices (MBSR, MBCT, Transcendental Meditation, Vipassana) are delivered as multi-week courses or residential retreats and sit outside the app-based scope of this registry. See the <a href={withBase('/methodology')}>methodology</a> for how that broader evidence landscape relates to the featured, app-based practices.</p>
+</BaseLayout>

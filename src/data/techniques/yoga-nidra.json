@@ -1,0 +1,68 @@
+{
+  "slug": "yoga-nidra",
+  "name": "Yoga Nidra",
+  "alsoKnownAs": "Yogic sleep; popularized in secular form as \"NSDR\" (non-sleep deep rest)",
+  "featured": true,
+  "order": 4,
+  "definition": "A guided practice done lying down in which a recorded voice leads you through a rotation of attention around the body (a body scan), breath awareness and imagery, keeping you in a relaxed state on the edge of sleep.",
+  "lineage": "Systematized by Swami Satyananda Saraswati (Bihar School of Yoga); many modern adaptations including iRest.",
+  "mechanismClass": "Guided rest / body-scan and rotation of consciousness",
+  "accessModel": "Multiple apps / self-guided",
+  "cost": "Free (widely available)",
+  "doseTypical": "Around 20-40 minutes per session; often practiced daily or as needed.",
+  "friction": "Very low. Widely available free via many apps and guided tracks; no registration required.",
+  "officialResource": {
+    "label": "Free guided Yoga Nidra / NSDR tracks (Insight Timer)",
+    "url": "https://insighttimer.com/"
+  },
+  "evidenceDossier": [
+    "Yoga Nidra has a growing but methodologically weak base: mostly small trials, heavily concentrated in India, with several recent meta-analyses that themselves rate the underlying evidence as low or very low certainty.",
+    "The relatively strongest signals are short-term reductions in anxiety and stress and in blood pressure, supported by multiple small randomized trials and two cardiovascular meta-analyses (Ghai 2025), though these are bias-prone.",
+    "For sleep — the practice's signature claim — the most recent meta-analysis (Singh 2026) found that pooled randomized-trial effects were not statistically significant and rated certainty as very low, and an independent US trial (Sharpe 2023) was largely null on its primary outcomes.",
+    "Mechanistic EEG work (Datta 2022) shows that practitioners remain in a waking state with only localized slow-wave activity, so the literal idea of \"yogic sleep\" is not supported; the state is deep rest, not sleep.",
+    "Several positive trials bundle Yoga Nidra with chanting or test generic relaxation labelled as Yoga Nidra, which clouds attribution, and some clinical guidance notes possible adverse reactions (dissociation, flashbacks) warranting trauma-informed delivery."
+  ],
+  "limitations": [
+    "The evidence is dominated by small, single-region and sometimes single-lab studies with high or serious risk of bias.",
+    "Pooled randomized evidence for improved sleep is not statistically significant, despite sleep being the most popular claim.",
+    "Cognition and metabolic claims rest on single, uncontrolled or dated studies.",
+    "Interventions are often bundled (for example with chanting), and 'Yoga Nidra' is sometimes conflated with generic guided relaxation."
+  ],
+  "safety": [
+    "Yoga Nidra is a low-intensity practice done lying down with no documented serious physical risks.",
+    "Because it involves sustained inward attention and imagery, some people — particularly those with trauma histories — can experience distressing reactions such as dissociation or intrusive memories; trauma-informed delivery is advised.",
+    "The practice is not a treatment for any medical or mental-health condition and does not replace professional care."
+  ],
+  "scorecard": {
+    "evidenceDepth": {
+      "rating": "Emerging",
+      "basis": "Multiple small RCTs and several meta-analyses, but the meta-analyses rate certainty as low or very low; pooled sleep effects are non-significant."
+    },
+    "cost": {
+      "rating": "Free",
+      "basis": "Widely available at no cost through many apps and guided tracks."
+    },
+    "friction": {
+      "rating": "Very low",
+      "basis": "Self-guided audio; no registration, teacher or equipment required."
+    },
+    "dose": {
+      "rating": "About 20-40 min/session",
+      "basis": "Typical guided session length; practiced daily or as needed."
+    },
+    "safety": {
+      "rating": "No documented serious risks",
+      "basis": "Low-intensity reclined practice; trauma-informed delivery advised for vulnerable individuals."
+    },
+    "mechanism": {
+      "rating": "Guided body-scan rest",
+      "basis": "Rotation of attention and imagery in a reclined state; measured effects include parasympathetic shift and reduced default-mode-network connectivity, in a waking (not sleeping) state."
+    }
+  },
+  "founderVoice": {
+    "quote": "Yoga nidra is the state of dynamic sleep, a state between waking and sleeping, in which the body rests while awareness remains.",
+    "attribution": "Swami Satyananda Saraswati, who systematized the practice",
+    "framing": "This is the source tradition's own framing of the practice, presented as that tradition's perspective and not as scientific evidence.",
+    "source": "https://www.biharyoga.net/"
+  }
+}

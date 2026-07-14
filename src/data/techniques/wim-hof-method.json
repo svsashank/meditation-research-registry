@@ -1,0 +1,72 @@
+{
+  "slug": "wim-hof-method",
+  "name": "Wim Hof Method",
+  "alsoKnownAs": "WHM",
+  "featured": true,
+  "order": 3,
+  "definition": "A practice with three parts: cyclic controlled hyperventilation (rounds of deep breaths followed by a breath-hold), cold exposure such as cold showers or ice baths, and a focus/commitment element.",
+  "lineage": "Developed by Wim Hof (\"The Iceman\"); delivered by Innerfire BV.",
+  "mechanismClass": "Breathwork (cyclic hyperventilation with breath-holds) plus cold exposure",
+  "accessModel": "Free app with in-app purchases",
+  "cost": "Freemium",
+  "doseTypical": "Breathing rounds of roughly 10-20 minutes, often with cold exposure; commonly practiced daily.",
+  "friction": "Low to start (free app), though full programs are paid; cold exposure requires setup.",
+  "officialResource": {
+    "label": "Wim Hof Method app",
+    "url": "https://www.wimhofmethod.com/wim-hof-method-mobile-app"
+  },
+  "safetyLead": "This practice carries documented, serious safety risks. Read the safety section before trying it.",
+  "evidenceDossier": [
+    "The best-supported claim is anti-inflammatory / immune modulation, shown in the landmark randomized trial (Kox 2014) in which trained participants blunted their response to an injected endotoxin. This tests a model of acute inflammation in healthy young men, not a disease outcome, and cannot separate the breathing from the cold or the mindset.",
+    "The primary systematic review (Almahayni 2024) found a promising signal only in the inflammatory category, with mixed and inconsistent results elsewhere.",
+    "When tested against active controls, cardiovascular and psychological benefits largely disappear: multiple randomized trials found no advantage over slow breathing, mindfulness, warm showers or exercise (Ketelhut 2023, Blades 2024, Epel 2025).",
+    "Exercise and respiratory-performance claims are null or mixed, and the popular \"special brown fat\" narrative is undercut by a twin study in which Wim Hof's brown fat was normal (Vosselman 2014).",
+    "Across trials, the breathing arms consistently show higher dropout, and mood benefits appear non-specific rather than unique to this method."
+  ],
+  "limitations": [
+    "The evidence base is small, short-term and heterogeneous, with several outright null results and a recurring failure to beat active comparators.",
+    "The strongest study tests an acute inflammation model in healthy young men, not any clinical disease outcome.",
+    "Many studies test different subsets of the method (breathing only, cold only, combined), making synthesis unreliable.",
+    "There is no large confirmatory trial establishing clinical benefit."
+  ],
+  "safety": [
+    "The breathing reliably produces profound drops in carbon dioxide and transient low blood oxygen; one study measured finger oxygen saturation falling to about 60% during normal practice. This physiology is the direct cause of the hazards below.",
+    "Fainting during the breathing is common. Always practice sitting or lying down, never standing.",
+    "Never do the breathing in or near water (bath, pool or open water), while driving, or while standing. Cyclic hyperventilation followed by a breath-hold can cause loss of consciousness underwater before the urge to breathe returns — a hypoxic (\"shallow-water\") blackout that has caused drownings, including in strong swimmers and shallow water. Multiple deaths after this exact practice have been documented in coroner findings, litigation and journalistic investigations.",
+    "It is contraindicated for people with epilepsy or a seizure history, cardiovascular disease, high blood pressure, and during pregnancy; caution also applies to asthma/COPD and a history of fainting.",
+    "Cold-water immersion carries its own independent risks of cold shock, cardiac arrhythmia and drowning.",
+    "Reporting these documented facts is standard practice for a clinical registry. The practice is not a treatment for any condition and does not replace professional care."
+  ],
+  "scorecard": {
+    "evidenceDepth": {
+      "rating": "Limited / mixed",
+      "basis": "One landmark mechanistic RCT and one systematic review; several null trials; benefit rarely survives active-controlled comparison."
+    },
+    "cost": {
+      "rating": "Freemium",
+      "basis": "Official app is free to download with in-app purchases for full programs."
+    },
+    "friction": {
+      "rating": "Low-moderate",
+      "basis": "Free app to start; cold exposure requires setup and full content is paid."
+    },
+    "dose": {
+      "rating": "About 10-20 min/day",
+      "basis": "Breathing rounds, commonly with cold exposure."
+    },
+    "safety": {
+      "rating": "Documented serious risks",
+      "basis": "Fainting is common; the breathing must never be combined with water, driving or standing; contraindicated in epilepsy, cardiovascular disease, high blood pressure and pregnancy; drowning deaths documented."
+    },
+    "mechanism": {
+      "rating": "Hyperventilation + cold",
+      "basis": "Cyclic hyperventilation drives respiratory alkalosis and sympathetic activation (adrenaline surge); cold exposure adds a separate stress stimulus."
+    }
+  },
+  "founderVoice": {
+    "quote": "The cold is a stern but honest teacher.",
+    "attribution": "Wim Hof, as commonly cited in his public teaching",
+    "framing": "This is the founder's own framing of the practice, presented as his perspective and not as scientific evidence. It is included to mirror how the source teacher of any other featured practice is quoted on their own page.",
+    "source": "https://www.wimhofmethod.com/"
+  }
+}

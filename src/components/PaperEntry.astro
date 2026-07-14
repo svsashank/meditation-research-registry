@@ -1,0 +1,22 @@
+---
+import { pubmedUrl, doiUrl } from '../lib/data.js';
+const { paper } = Astro.props;
+const resultLabel = { null: 'Null / negative', mixed: 'Mixed', positive: 'Positive' };
+---
+<div class="paper" data-design={paper.design} data-year={paper.year} data-result={paper.resultType}>
+  <div class="title">{paper.title}</div>
+  <div class="cite">{paper.authors} ({paper.year}). <em>{paper.journal}</em>.</div>
+  <div>
+    <span class="tag">{paper.design}</span>
+    {paper.n != null && <span class="tag">n = {paper.n}</span>}
+    <span class={`tag ${paper.resultType === 'null' ? 'null' : ''}`}>{resultLabel[paper.resultType]}</span>
+    {paper.differentPractice && <span class="tag warn">Tested a different practice</span>}
+    {paper.affiliation && paper.affiliation.includes('self-research') && <span class="tag warn">Affiliated researchers</span>}
+  </div>
+  <p class="finding">{paper.finding}</p>
+  <div class="cite"><strong>Practice actually tested:</strong> {paper.tested}. <strong>Independence:</strong> {paper.affiliation}.</div>
+  <div class="links">
+    {paper.pmid && <a href={pubmedUrl(paper.pmid)} rel="noopener">PubMed {paper.pmid}</a>}
+    {paper.doi && <a href={doiUrl(paper.doi)} rel="noopener">DOI {paper.doi}</a>}
+  </div>
+</div>

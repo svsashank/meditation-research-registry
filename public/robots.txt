@@ -1,0 +1,4 @@
+# Staging: the registry is intentionally NOT indexed until a qualified
+# medical/scientific reviewer signs off (BRIEF.md §13, §18).
+User-agent: *
+Disallow: /

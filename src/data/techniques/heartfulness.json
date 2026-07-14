@@ -1,0 +1,69 @@
+{
+  "slug": "heartfulness",
+  "name": "Heartfulness",
+  "alsoKnownAs": "Sahaj Marg / Shri Ram Chandra Mission",
+  "featured": true,
+  "order": 2,
+  "definition": "A heart-based meditation in which you sit with eyes closed and gently rest attention on the heart, often paired with a \"cleaning\" step and with \"transmission\" (pranahuti) delivered through a trained volunteer.",
+  "lineage": "Sahaj Marg lineage of the Shri Ram Chandra Mission; taught by Heartfulness trainers.",
+  "mechanismClass": "Heart-based meditation (with trainer-mediated \"transmission\")",
+  "accessModel": "App + trainer-guided",
+  "cost": "Free (core practice)",
+  "doseTypical": "Around 20-30 minutes per session, typically daily, plus a periodic \"cleaning\" practice.",
+  "friction": "Low, but the defining element (transmission) is delivered by a certified trainer, so it is not fully solo; the HeartsApp connects users to trainers.",
+  "officialResource": {
+    "label": "HeartsApp (free)",
+    "url": "https://heartsapp.org/"
+  },
+  "selfResearchDisclosure": "A large share of the Heartfulness literature is produced by researchers affiliated with the Heartfulness Institute / Shri Ram Chandra Mission. This is disclosed here in the same terms used for any other practice's in-house research.",
+  "evidenceDossier": [
+    "Heartfulness has a genuine and growing peer-reviewed footprint of roughly forty-plus indexed papers, but the base is early-stage: small, single-site studies, several randomized against sham or active comparators, with almost no independent replication of the biological claims.",
+    "The most credible signals are short-term reductions in perceived stress, cortisol and burnout symptoms, supported by several small randomized trials (Desai 2024, Philip 2025), and an acute shift in heart-rate variability toward parasympathetic balance, partly corroborated by more independent teams (Arya 2018).",
+    "Claims about telomere lengthening and gene expression rest on single small studies, mostly by affiliated researchers, with subgroup-dependent or exploratory results, and should be read as hypothesis-generating.",
+    "A large multinational quality-of-life survey (3,164 respondents) is cross-sectional, self-reported and authored entirely by organization volunteers, so it carries little causal weight despite its size.",
+    "Notably, several of the most independent studies report null or mixed results (for example, no effect on dental anxiety or pain), which warrants caution about allegiance bias."
+  ],
+  "limitations": [
+    "No systematic review or meta-analysis of Heartfulness specifically exists, and there is no large or multi-centre confirmatory trial.",
+    "The field is dominated by a small number of affiliated investigators; independent replication is scarce and, where it exists, more often null or mixed.",
+    "Samples are typically small, single-site and short in duration, with several \"trials\" being uncontrolled pre-post cohorts.",
+    "The boldest biological claims (telomere length, gene expression, cellular aging) are currently unsubstantiated by independent replication."
+  ],
+  "safety": [
+    "Heartfulness is a low-intensity seated practice with no documented serious physical risks in the published literature.",
+    "Because sessions can involve extended inward attention and trainer interaction, people with significant psychiatric conditions should approach it with professional guidance.",
+    "The practice is not a treatment for any medical or mental-health condition and does not replace professional care."
+  ],
+  "scorecard": {
+    "evidenceDepth": {
+      "rating": "Emerging",
+      "basis": "Several small single-site RCTs plus cohorts; no systematic review, no large confirmatory trial, little independent replication."
+    },
+    "cost": {
+      "rating": "Free",
+      "basis": "The organization states core guided meditation and trainer sessions are free; optional paid reading content exists."
+    },
+    "friction": {
+      "rating": "Low-moderate",
+      "basis": "App-accessible, but the defining \"transmission\" element is delivered through a certified trainer rather than fully self-guided."
+    },
+    "dose": {
+      "rating": "About 20-30 min/day",
+      "basis": "Typical sessions plus a periodic cleaning practice."
+    },
+    "safety": {
+      "rating": "No documented serious risks",
+      "basis": "Low-intensity seated practice; standard meditation cautions apply."
+    },
+    "mechanism": {
+      "rating": "Heart-based attention",
+      "basis": "Attention rested on the heart with a cleaning step; measured acute effects include a parasympathetic HRV shift and lowered cortisol in small studies."
+    }
+  },
+  "founderVoice": {
+    "quote": "Heartfulness is a simple way to experience the heart's field of energy, and through it, a deeper stillness and balance in daily life.",
+    "attribution": "Kamlesh D. Patel (Daaji), Heartfulness guide",
+    "framing": "This is the tradition's own framing of the practice, presented as that tradition's perspective and not as scientific evidence.",
+    "source": "https://heartfulness.org/"
+  }
+}

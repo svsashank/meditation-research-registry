@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PaperEntry from '../components/PaperEntry.astro';
+import { papers, techniques, withBase } from '../lib/data.js';
+
+const sorted = [...papers].sort((a, b) => b.year - a.year);
+const techLabel = Object.fromEntries(techniques.map((t) => [t.slug, t.name]));
+techLabel['landscape'] = 'Evidence landscape (context)';
+const designs = [...new Set(papers.map((p) => p.design))].sort();
+---
+<BaseLayout title="Research Library" description="Every study mapped to a featured practice or to the broader evidence landscape, filterable by practice, study type and result — including null and mixed findings.">
+  <p class="eyebrow">Evidence substrate</p>
+  <h1>Research Library</h1>
+  <p class="lede">Every study mapped to a featured practice or to the broader evidence landscape. Papers are mapped to the practice they actually tested, and the corpus deliberately keeps null, mixed and critical studies alongside the positive ones.</p>
+
+  <div class="filters">
+    <label>Practice
+      <select id="f-tech">
+        <option value="">All practices</option>
+        {techniques.map((t) => <option value={t.slug}>{t.name}</option>)}
+        <option value="landscape">Evidence landscape (context)</option>
+      </select>
+    </label>
+    <label>Study type
+      <select id="f-design">
+        <option value="">All types</option>
+        {designs.map((d) => <option value={d}>{d}</option>)}
+      </select>
+    </label>
+    <label>Result
+      <select id="f-result">
+        <option value="">All results</option>
+        <option value="positive">Positive</option>
+        <option value="mixed">Mixed</option>
+        <option value="null">Null / negative</option>
+      </select>
+    </label>
+    <span id="count" style="margin-left:auto;color:var(--ink-faint)"></span>
+  </div>
+
+  <div id="library">
+    {sorted.map((p) => (
+      <div class="lib-item" data-techs={p.techniques.join(',')} data-design={p.design} data-result={p.resultType}>
+        <div style="font-size:.78rem;color:var(--ink-faint);margin-bottom:-.4rem;padding-top:.4rem">
+          {p.techniques.map((s) => techLabel[s]).join(' · ')}
+        </div>
+        <PaperEntry paper={p} />
+      </div>
+    ))}
+  </div>
+
+  <p class="disclaimer">Informational only — not medical advice. Some PubMed records for these studies carry mismatched DOIs due to an indexing artifact; where known, verified links are used. Full citations link to PubMed and DOI on each entry.</p>
+
+  <script is:inline>
+    const ft = document.getElementById('f-tech');
+    const fd = document.getElementById('f-design');
+    const fr = document.getElementById('f-result');
+    const items = Array.from(document.querySelectorAll('.lib-item'));
+    const count = document.getElementById('count');
+    function apply() {
+      const t = ft.value, d = fd.value, r = fr.value;
+      let n = 0;
+      items.forEach((el) => {
+        const techs = el.getAttribute('data-techs').split(',');
+        const ok = (!t || techs.includes(t)) &&
+                   (!d || el.getAttribute('data-design') === d) &&
+                   (!r || el.getAttribute('data-result') === r);
+        el.style.display = ok ? '' : 'none';
+        if (ok) n++;
+      });
+      count.textContent = n + ' of ' + items.length + ' studies';
+    }
+    [ft, fd, fr].forEach((s) => s.addEventListener('change', apply));
+    apply();
+  </script>
+</BaseLayout>

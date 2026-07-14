@@ -1,0 +1,16 @@
+{
+  "name": "meditation-research-registry",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An objective, evidence-mapped public registry of app- and self-guided meditation practices, rated against the peer-reviewed clinical literature.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.16.0"
+  }
+}

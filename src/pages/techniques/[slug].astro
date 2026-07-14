@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Scorecard from '../../components/Scorecard.astro';
+import PaperEntry from '../../components/PaperEntry.astro';
+import { techniques, papersForTechnique, withBase } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return techniques.map((t) => ({ params: { slug: t.slug }, props: { technique: t } }));
+}
+
+const { technique: t } = Astro.props;
+const papers = papersForTechnique(t.slug);
+
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'DefinedTerm',
+  name: t.name,
+  description: t.definition,
+  inDefinedTermSet: {
+    '@type': 'DefinedTermSet',
+    name: 'Meditation Science Registry — technique taxonomy',
+  },
+  termCode: t.slug,
+};
+---
+<BaseLayout title={t.name} description={t.definition} jsonld={jsonld}>
+  <p class="backlink"><a href={withBase('/techniques')}>← All techniques</a></p>
+  <p class="eyebrow">{t.mechanismClass}</p>
+  <h1>{t.name}</h1>
+  {t.alsoKnownAs && <p class="lede">{t.alsoKnownAs}</p>}
+
+  {t.safetyLead && (
+    <div class="callout safety">
+      <h4>Safety first</h4>
+      {t.safetyLead}
+    </div>
+  )}
+
+  <h2>What you actually do</h2>
+  <p>{t.definition}</p>
+
+  <h2>Lineage, access and cost</h2>
+  <p>{t.lineage}</p>
+  <p><strong>Access model:</strong> {t.accessModel}. <strong>Cost:</strong> {t.cost}. <strong>Typical dose:</strong> {t.doseTypical} <strong>Friction to start:</strong> {t.friction}</p>
+  {t.identityNote && <div class="callout"><h4>Identity note</h4>{t.identityNote}</div>}
+  {t.doseCaveat && <div class="callout"><h4>An honest caveat on dose</h4>{t.doseCaveat}</div>}
+
+  <h2>Evidence dossier</h2>
+  <div class="prose">
+    <ul>
+      {t.evidenceDossier.map((d) => <li>{d}</li>)}
+    </ul>
+  </div>
+
+  {t.selfResearchDisclosure && (
+    <div class="callout disclosure">
+      <h4>Self-research disclosure</h4>
+      {t.selfResearchDisclosure}
+    </div>
+  )}
+
+  <h2>Multi-axis scorecard</h2>
+  <p>The same six axes are scored for every featured practice by one published rule. See how this practice sits against the others on the <a href={withBase('/evidence-map')}>evidence map</a>.</p>
+  <Scorecard scorecard={t.scorecard} />
+
+  <h2>Limitations &amp; open questions</h2>
+  <div class="prose"><ul>{t.limitations.map((l) => <li>{l}</li>)}</ul></div>
+
+  <h2>Safety</h2>
+  <div class={`prose ${t.safetyLead ? 'callout safety' : ''}`}>
+    <ul>{t.safety.map((s) => <li>{s}</li>)}</ul>
+  </div>
+
+  <h2>How to start</h2>
+  <p>Official free resource: <a href={t.officialResource.url} rel="noopener">{t.officialResource.label}</a>. This is the same kind of single, neutral link block every practice receives.</p>
+
+  {t.founderVoice && (
+    <div class="callout">
+      <h4>The tradition's own words</h4>
+      <p style="font-family:var(--serif);font-size:1.05rem">“{t.founderVoice.quote}”</p>
+      <p style="font-size:.85rem;color:var(--ink-faint);margin-bottom:.3rem">— {t.founderVoice.attribution}. <a href={t.founderVoice.source} rel="noopener">Source</a></p>
+      <p style="font-size:.85rem;color:var(--ink-faint);margin:0">{t.founderVoice.framing}</p>
+    </div>
+  )}
+
+  <h2>Mapped studies ({papers.length})</h2>
+  <p>Every study directly mapped to this practice, newest first, including null and mixed results. Studies that tested a different or longer practice are flagged.</p>
+  <div>
+    {papers.map((p) => <PaperEntry paper={p} />)}
+  </div>
+
+  <p class="disclaimer">Informational only — not medical advice, and not a substitute for professional care. {t.name} is not a treatment for any medical or mental-health condition. Claim-strength language on this page is matched to each study's design; full citations link to PubMed and DOI above.</p>
+</BaseLayout>

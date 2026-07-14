@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { featuredTechniques, papers, withBase } from '../lib/data.js';
+
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Meditation Science Registry',
+  description: 'An objective, evidence-mapped public registry of app- and self-guided meditation practices, rated against the peer-reviewed clinical literature.',
+  publisher: { '@type': 'Organization', name: 'Meditation Science Registry (volunteer project)' },
+};
+const paperCount = papers.length;
+---
+<BaseLayout title="Home" description="An objective, evidence-mapped registry of app-based meditation practices, rated against the peer-reviewed clinical literature." jsonld={jsonld}>
+  <p class="eyebrow">Independent evidence registry</p>
+  <h1>What the science actually shows about app-based meditation</h1>
+  <p class="lede">A neutral reference that rates self-guided, app-delivered meditation practices against the peer-reviewed clinical literature — the same rules, the same scrutiny, applied to every practice.</p>
+
+  <p>Each featured practice gets one dossier: a plain description of what you do, an honest read of what the directly-mapped studies show (and don't), a multi-axis scorecard, and its limitations and safety. Where a study tested a different or longer practice than the one on the page, we say so. Where the evidence is thin, we say that too.</p>
+
+  <div class="callout disclosure">
+    <h4>How to read this site</h4>
+    We are a small group of volunteers, some of whom practice and value one of the featured techniques (Isha Kriya / Miracle of Mind). We state that openly rather than hide it, and we hold every practice — including that one — to identical rules. The <a href={withBase('/methodology')}>methodology</a> and <a href={withBase('/about')}>about</a> pages explain exactly how, and the neutrality audit in the project repository is our public proof.
+  </div>
+
+  <h2>Featured practices</h2>
+  <div class="card-grid">
+    {featuredTechniques.map((t) => (
+      <a class="card" href={withBase(`/techniques/${t.slug}`)}>
+        <h3>{t.name}</h3>
+        <div class="meta">{t.mechanismClass} · {t.cost} · {t.scorecard.evidenceDepth.rating} evidence</div>
+        <p>{t.definition}</p>
+      </a>
+    ))}
+  </div>
+
+  <h2>Start here</h2>
+  <div class="card-grid">
+    <a class="card" href={withBase('/evidence-map')}>
+      <h3>The Evidence Map</h3>
+      <p>All four practices side by side across six axes — evidence depth, cost, friction, dose, safety and mechanism. The citable centerpiece.</p>
+    </a>
+    <a class="card" href={withBase('/research-library')}>
+      <h3>Research Library</h3>
+      <p>{paperCount} mapped studies, filterable by practice, study type and result — including the null and mixed findings.</p>
+    </a>
+    <a class="card" href={withBase('/methodology')}>
+      <h3>Methodology</h3>
+      <p>How practices are scored symmetrically, the broader evidence landscape, and our "no thumb on the scale" commitment.</p>
+    </a>
+  </div>
+
+  <p class="disclaimer">This site is informational and educational. It is not medical advice and does not replace professional care. Meditation is not a treatment for any medical or mental-health condition. If you have a health condition, consult a qualified professional before starting a new practice.</p>
+</BaseLayout>

@@ -1,0 +1,20 @@
+---
+const { scorecard } = Astro.props;
+const axes = [
+  ['evidenceDepth', 'Evidence depth'],
+  ['cost', 'Cost'],
+  ['friction', 'Friction to start'],
+  ['dose', 'Daily dose'],
+  ['safety', 'Safety'],
+  ['mechanism', 'Mechanism'],
+];
+---
+<div class="scorecard">
+  {axes.map(([key, label]) => (
+    <div class="axis">
+      <div class="label">{label}</div>
+      <div class="val">{scorecard[key].rating}</div>
+      <div class="basis">{scorecard[key].basis}</div>
+    </div>
+  ))}
+</div>

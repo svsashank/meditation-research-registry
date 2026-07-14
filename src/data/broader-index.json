@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Sri M's Kriya Yoga",
+    "tradition": "Nath Sampradaya lineage (Satsang Foundation)",
+    "access": "Initiation-based, taught in person in small groups; no dedicated practice app.",
+    "evidenceStatus": "Minimal to no peer-reviewed research specific to this method. Listed for tradition and access information only; no clinical claims are made.",
+    "whyNotFeatured": "Not app-deliverable and lacks a statable published evidence base."
+  },
+  {
+    "name": "Kriya Yoga (Yogananda / Self-Realization Fellowship and related lineages)",
+    "tradition": "Kriya lineages of Lahiri Mahasaya and Paramahansa Yogananda",
+    "access": "Initiation-based pranayama-meditation transmitted by lineage teachers; not app-deliverable.",
+    "evidenceStatus": "Minimal peer-reviewed research on the specific technique.",
+    "whyNotFeatured": "Not app-deliverable and minimal published evidence."
+  },
+  {
+    "name": "Sudarshan Kriya Yoga (SKY)",
+    "tradition": "Art of Living (Sri Sri Ravi Shankar)",
+    "access": "Cyclical rhythmic-breathing practice taught through a structured in-person or live course, not a solo app.",
+    "evidenceStatus": "A relatively fair evidence base for a breath practice, with a real if quality-limited randomized and pilot base for depression and anxiety. Many studies are conducted by affiliated researchers and are small.",
+    "whyNotFeatured": "Course-delivered rather than self-guided via a dedicated app, so it sits outside the featured, app-based scope."
+  },
+  {
+    "name": "Vipassana (S.N. Goenka format)",
+    "tradition": "Theravada-derived insight meditation",
+    "access": "Ten-day silent residential retreat, donation-based; not app-deliverable.",
+    "evidenceStatus": "Evidence is thin relative to its cultural prominence, dominated by small or naturalistic studies, with adverse-event under-reporting a specific concern for intensive retreats.",
+    "whyNotFeatured": "Retreat-based, not app-deliverable."
+  }
+]

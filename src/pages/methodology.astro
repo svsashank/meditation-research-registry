@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { landscapePapers, pubmedUrl, doiUrl, withBase } from '../lib/data.js';
+const landscape = landscapePapers();
+---
+<BaseLayout title="Methodology" description="How practices are scored symmetrically, the broader evidence landscape, and the registry's no-thumb-on-the-scale commitment.">
+  <p class="eyebrow">How this works</p>
+  <h1>Methodology</h1>
+  <p class="lede">The registry's value rests on being trustworthy, which means every practice is measured by the same rules. This page states those rules, the broader evidence landscape, and our commitment to keeping a thumb off the scale.</p>
+
+  <h2>How practices are scored — symmetrically</h2>
+  <p>We map peer-reviewed studies from PubMed to the practice they actually tested, and rate each practice on one evidence hierarchy applied to all: systematic reviews and meta-analyses rank above randomized controlled trials, which rank above longitudinal cohort studies, then cross-sectional studies, then mechanistic and neuroimaging work. The same search rigor and the same rating rubric apply to every practice.</p>
+  <p>Each practice is then placed on six axes — evidence depth, cost, friction to start, daily dose, safety and mechanism. We report six axes rather than one score on purpose: a practice can sit at a modest evidence tier while genuinely leading on cost, friction, dose or safety, and each of those is an independently checkable fact rather than a ranking. Every cell on the <a href={withBase('/evidence-map')}>evidence map</a> links to its basis.</p>
+
+  <h2>No thumb on the scale</h2>
+  <div class="callout">
+    <p style="margin:0">There is no practice-family bonus and no affiliated-institution bonus anywhere in how practices are rated. No practice receives a scoring boost, softer language, more prominent placement or a lighter limitations section than any other. This includes Isha Kriya / Miracle of Mind, which one of this project's volunteers practices: it is rated at exactly the strength its own direct evidence supports — currently a pilot / early-stage tier — and its limitations are stated as plainly as every other practice's. Where a practice's real advantage is cost, friction, dose or safety, it shows up on those axes, never by inflating the science.</p>
+  </div>
+  <p>Our public proof that these rules held is the neutrality audit committed alongside the site in the project repository, together with a per-page claims register and a log of judgment calls.</p>
+
+  <h2>Claims discipline</h2>
+  <p>Every benefit or health claim on the site cites a specific study on the same page, in language matched to that study's design — "a randomized trial found," "an uncontrolled study reported," "a meta-analysis found." We do not use words like cures, treats, reverses, or "clinically proven," and we do not make second-person health promises. Where a study tested a different or longer practice than the page's technique, we say so plainly. A limitations section and a standard disclaimer appear on every page, and the corpus deliberately retains null, mixed and critical studies.</p>
+
+  <h2>The broader evidence landscape</h2>
+  <p>The most-studied meditation practices are not the app-based ones featured here. They are delivered as multi-week courses or residential retreats, and they fall outside this registry's app-based scope. We acknowledge them honestly so no reader leaves believing app-delivered practices are the most-researched forms of meditation:</p>
+  <div class="prose">
+    <ul>
+      <li><strong>MBCT (Mindfulness-Based Cognitive Therapy)</strong> — an 8-week clinical course. An individual-patient-data meta-analysis found it reduces depressive-relapse risk in people with recurrent depression, comparable to maintenance antidepressants. This is the strongest single evidence claim in the meditation field, and it is for a course-delivered intervention.</li>
+      <li><strong>MBSR (Mindfulness-Based Stress Reduction)</strong> — an 8-week course; the most-studied secular mindfulness program, with moderate evidence for stress, anxiety and wellbeing.</li>
+      <li><strong>Transcendental Meditation</strong> — taught via a paid, in-person course with initiation; a mild, transient blood-pressure signal clouded by affiliation bias, and a Cochrane review that could draw no firm conclusions.</li>
+      <li><strong>Vipassana / long-course mindfulness</strong> — residential-retreat formats; evidence is thin relative to their prominence, with adverse-event under-reporting a specific concern.</li>
+    </ul>
+  </div>
+  <p>Across the field, its own critical appraisals caution that effects are small-to-moderate, rarely superior to active treatments, and burdened by methodological weakness and under-reported harms. None of this course-based evidence should be read as validation of app-based solo practice — which is exactly why these practices are acknowledged here but not featured.</p>
+
+  <h3>Landscape and critical-appraisal sources</h3>
+  <div>
+    {landscape.map((p) => (
+      <div class="paper">
+        <div class="title">{p.title}</div>
+        <div class="cite">{p.authors} ({p.year}). <em>{p.journal}</em>.</div>
+        <p class="finding">{p.finding}</p>
+        <div class="links">
+          {p.pmid && <a href={pubmedUrl(p.pmid)} rel="noopener">PubMed {p.pmid}</a>}
+          {p.doi && <a href={doiUrl(p.doi)} rel="noopener">DOI {p.doi}</a>}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <h2>Updating</h2>
+  <p>The registry is re-run monthly to map new publications to the featured practices and the broader index, with the same symmetry rules and the same review artifacts. Nothing auto-publishes, and every run re-runs the neutrality audit.</p>
+
+  <p class="disclaimer">Informational only — not medical advice, and not a substitute for professional care. Evidence is current to July 2026.</p>
+</BaseLayout>

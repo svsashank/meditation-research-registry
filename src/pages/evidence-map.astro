@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { featuredTechniques, withBase } from '../lib/data.js';
+
+const axes = [
+  ['evidenceDepth', 'Evidence depth'],
+  ['cost', 'Cost'],
+  ['friction', 'Friction to start'],
+  ['dose', 'Daily dose'],
+  ['safety', 'Safety'],
+  ['mechanism', 'Mechanism'],
+];
+
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'Meditation Science Registry — Evidence Map',
+  description: 'A multi-axis comparison of app-based meditation practices across evidence depth, cost, friction, dose, safety and mechanism, each cell grounded in cited sources.',
+  creator: { '@type': 'Organization', name: 'Meditation Science Registry (volunteer project)' },
+  variableMeasured: axes.map(([, label]) => label),
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+};
+---
+<BaseLayout title="Evidence Map" description="A transparent, multi-axis comparison of app-based meditation practices — evidence depth, cost, friction, dose, safety and mechanism." jsonld={jsonld}>
+  <p class="eyebrow">The citable centerpiece</p>
+  <h1>The Evidence Map</h1>
+  <p class="lede">Every featured practice, scored on the same six axes by one published rule. No axis is defined, weighted or ordered to advantage any one practice. Each cell's basis is stated so it can be checked independently.</p>
+
+  <div class="callout">
+    <h4>Why six axes, not one score</h4>
+    Collapsing a practice to a single number hides what matters. A practice can sit at a modest evidence tier yet lead on cost, friction, dose or safety — and each of those is an independently checkable fact, not a ranking. So we never combine the axes into one number, and we never sort practices by "best." The table below is ordered the same way throughout the site (by the registry's fixed practice order), not by any axis.
+  </div>
+
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Practice</th>
+          {axes.map(([, label]) => <th>{label}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {featuredTechniques.map((t) => (
+          <tr>
+            <td><a href={withBase(`/techniques/${t.slug}`)}><strong>{t.name}</strong></a></td>
+            {axes.map(([key]) => (
+              <td>
+                {t.scorecard[key].rating}
+                <span class="axis-basis">{t.scorecard[key].basis}</span>
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Reading the evidence-depth column honestly</h2>
+  <p>Evidence depth reflects the count and design of studies mapped directly to that practice, rated on one hierarchy for all: meta-analysis and systematic review sit above randomized trials, which sit above cohort, cross-sectional and mechanistic work. It is a measure of how much good evidence exists for that specific practice — not a measure of whether the practice "works," and not something any practice can win by having a larger or more favorable literature elsewhere.</p>
+  <p>None of the four featured, app-based practices reaches the top tier. The most-studied meditation practices are course- and retreat-delivered and sit outside this registry's scope; see the <a href={withBase('/methodology')}>methodology</a> for that broader backdrop, so no reader leaves believing app-delivered practices are the most-researched forms of meditation.</p>
+
+  <h2>Machine-readable</h2>
+  <p>This map is available as a clean table (above, marked up as a schema.org <code>Dataset</code>) and as <a href={withBase('/evidence-map.json')}>evidence-map.json</a> so a single cell can be quoted accurately.</p>
+
+  <p class="disclaimer">Informational only — not medical advice. Each rating links to a full dossier with cited studies, including null and mixed results.</p>
+</BaseLayout>
