@@ -4,19 +4,19 @@
   "alsoKnownAs": "The Isha Kriya practice, delivered as the free Miracle of Mind app",
   "featured": true,
   "order": 1,
-  "definition": "A guided practice in which you sit with eyes closed, focus attention on the space between the eyebrows, mentally repeat two set phrases through slow breath cycles, and finish with a short chant of \"Aa\".",
+  "definition": "A guided practice done sitting with eyes closed, face slightly upturned and a mild focus between the eyebrows, in three stages: first you breathe while mentally affirming \"I am not the body\" on each in-breath and \"I am not even the mind\" on each out-breath; then you chant a long \"Aa\" sound seven times, exhaling fully each time; then you sit quietly for a few minutes with attention between the eyebrows.",
   "lineage": "Taught by Sadhguru / Isha Foundation, drawn from classical yogic practice. Miracle of Mind delivers the Isha Kriya practice through an app and is closely similar to it.",
   "mechanismClass": "Breath-and-attention (focused attention with mantra)",
   "accessModel": "App / self-guided",
   "cost": "Free",
-  "doseTypical": "About 7 minutes (adjustable); the studied Isha Kriya protocol runs longer, around 12-15 minutes.",
+  "doseTypical": "The Miracle of Mind app guides an adjustable session of about 7 minutes; the classic Isha Kriya protocol runs longer, a minimum of 12 minutes and roughly 12-18 minutes in total.",
   "friction": "App-only. No registration, initiation or course required.",
   "officialResource": {
     "label": "Miracle of Mind app (free)",
     "url": "https://isha.sadhguru.org/us/en/miracle-of-mind"
   },
   "identityNote": "Miracle of Mind and Isha Kriya are closely similar: Miracle of Mind delivers the Isha Kriya practice through an app, the main difference being length (the app offers a shorter, about 7-minute version of the studied protocol). Because the two are so similar, studies of Isha Kriya are treated as this entry's direct evidence, subject to the dose caveat below.",
-  "doseCaveat": "The Isha Kriya protocol used in published studies has a set structure of roughly 12-15 minutes, while the app lets users shorten the session toward about 7 minutes. The studied dose and the app dose are therefore not always identical.",
+  "doseCaveat": "The Isha Kriya protocol used in published studies has a set three-stage structure lasting a minimum of about 12 minutes (roughly 12-18 minutes in total), while the app lets users shorten the session toward about 7 minutes. The studied dose and the app dose are therefore not always identical.",
   "selfResearchDisclosure": "Several supporting studies were conducted by Isha-affiliated researchers, including the Sadhguru Center for a Conscious Planet at Beth Israel Deaconess Medical Center / Harvard. This is disclosed here in the same terms used for any other practice's in-house research.",
   "evidenceDossier": [
     "The direct evidence comes from studies of Isha Kriya, the closely similar practice that Miracle of Mind delivers, and it is small and early-stage. The strongest study is a randomized controlled trial in transplant patients (Chopra 2023), and its primary quality-of-life endpoint was null, with one secondary measure improving transiently before fading.",
@@ -51,7 +51,7 @@
     },
     "dose": {
       "rating": "About 7 min/day (adjustable)",
-      "basis": "App default is roughly 7 minutes; the studied protocol is longer (about 12-15 minutes)."
+      "basis": "App default is roughly 7 minutes; the classic studied protocol is longer (a minimum of about 12 minutes, roughly 12-18 minutes total)."
     },
     "safety": {
       "rating": "No documented serious risks",
