@@ -142,3 +142,16 @@ standing. All Isha Kriya studies remain mapped as direct evidence and the null R
 first in the dossier; the "similar (not dose-identical)" framing is, if anything, the more
 conservative reading and simply makes the existing dose caveat (BRIEF §6.1) explicit in the
 relationship language. The Shambhavi-Mahamudra firewall (D1) is unchanged.
+
+### D16. Entry description rewritten to reflect the Miracle of Mind app itself
+
+The owner noted the practice description was reciting the classic Isha Kriya protocol
+rather than describing the app. The definition, dose and cost fields now describe Miracle
+of Mind directly, verified against official sources (Isha's Miracle of Mind page and the
+app-store listings): a free, ad-free app with a single Sadhguru-guided session of about 7
+minutes, adjustable up to 21, plus reminders, streaks and daily wisdom. The lineage still
+states openly that the session is a short form of Isha Kriya (BRIEF §6.1). The evidence
+section was NOT relabelled: the trials were run on Isha Kriya, not on the app, so provenance
+stays honest (BRIEF §9) and the entry notes the app has not itself been studied — which
+keeps it, if anything, more conservative. Tier unchanged (Pilot / early-stage).
+Sources: isha.sadhguru.org/us/en/miracle-of-mind; Apple App Store id6737795677.
